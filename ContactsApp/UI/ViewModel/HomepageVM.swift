@@ -18,10 +18,17 @@ class HomepageVM : ObservableObject {
         db = FMDatabase(path: destinationPath.path)
         }
     
-    func del(at offsets:IndexSet){
-        let contact = contactList[offsets.first!]
-        contactList.remove(at: offsets.first!)
-        print("Contact Deleted: \(contact.contact_id!)")
+    func del(contact_id:Int){
+        db?.open()
+        
+        do{
+            try db!.executeUpdate("DELETE FROM kisiler WHERE kisi_id = ?", values: [contact_id])
+            loadContacts()
+        }catch{
+            print(error.localizedDescription)
+        }
+        
+        db?.close()
     }
     func loadContacts(){
         db?.open()
@@ -50,6 +57,29 @@ class HomepageVM : ObservableObject {
         db?.close()
     }
     func search(searchedWord: String){
-        print("Search: \(searchedWord)" )
+        db?.open()
+        var list = [Contacts]()
+        
+        do {
+            let result = try db!.executeQuery("SELECT * FROM kisiler WHERE kisi_ad like ?", values: ["%\(searchedWord)%"])
+            while result.next(){
+                let contact_id = Int(result.string(forColumn: "kisi_id"))!
+                let contact_name = result.string(forColumn: "kisi_ad")!
+                let contact_tel = result.string(forColumn: "kisi_tel")!
+                
+                let contact = Contacts(contact_id: contact_id, contact_name: contact_name, contact_tel: contact_tel)
+                list.append(contact)
+              
+            }
+            
+            contactList = list
+            
+        }catch {
+            print(error.localizedDescription)
+        }
+        
+        
+        
+        db?.close()
     }
 }

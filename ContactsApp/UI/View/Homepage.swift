@@ -14,8 +14,10 @@ struct Homepage: View {
 
     func del(at offsets: IndexSet) {
         let contact = viewModel.contactList[offsets.first!]
+        viewModel.del(contact_id: contact.contact_id!)
         viewModel.contactList.remove(at: offsets.first!)
         print("Contact Deleted: \(contact.contact_id!)")
+        viewModel.loadContacts()
     }
 
     var body: some View {
