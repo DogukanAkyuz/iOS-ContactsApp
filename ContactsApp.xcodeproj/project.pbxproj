@@ -7,6 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		E64A99662D2C11DD00A904EC /* FMDatabaseQueue.m in Sources */ = {isa = PBXBuildFile; fileRef = E64A99622D2C11DD00A904EC /* FMDatabaseQueue.m */; };
+		E64A99672D2C11DD00A904EC /* FMDatabasePool.m in Sources */ = {isa = PBXBuildFile; fileRef = E64A99602D2C11DD00A904EC /* FMDatabasePool.m */; };
+		E64A99682D2C11DD00A904EC /* FMDatabaseAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = E64A995E2D2C11DD00A904EC /* FMDatabaseAdditions.m */; };
+		E64A99692D2C11DD00A904EC /* FMResultSet.m in Sources */ = {isa = PBXBuildFile; fileRef = E64A99652D2C11DD00A904EC /* FMResultSet.m */; };
+		E64A996A2D2C11DD00A904EC /* FMDatabase.m in Sources */ = {isa = PBXBuildFile; fileRef = E64A995C2D2C11DD00A904EC /* FMDatabase.m */; };
+		E64A99732D2C1ACA00A904EC /* rehber.sqlite in Resources */ = {isa = PBXBuildFile; fileRef = E64A99722D2C1ACA00A904EC /* rehber.sqlite */; };
 		E67A14E62CF8841E00B6C4BF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E67A14DE2CF8841E00B6C4BF /* Assets.xcassets */; };
 		E67A15072CF8864600B6C4BF /* Contacts.swift in Sources */ = {isa = PBXBuildFile; fileRef = E67A14FA2CF8864600B6C4BF /* Contacts.swift */; };
 		E67A15082CF8864600B6C4BF /* ContactRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = E67A14FD2CF8864600B6C4BF /* ContactRow.swift */; };
@@ -21,6 +27,20 @@
 
 /* Begin PBXFileReference section */
 		E63EF8662CDA6F050025E5D0 /* ContactsApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ContactsApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		E64A995A2D2C11AF00A904EC /* libsqlite3.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.tbd; path = usr/lib/libsqlite3.tbd; sourceTree = SDKROOT; };
+		E64A995B2D2C11DD00A904EC /* FMDatabase.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FMDatabase.h; sourceTree = "<group>"; };
+		E64A995C2D2C11DD00A904EC /* FMDatabase.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FMDatabase.m; sourceTree = "<group>"; };
+		E64A995D2D2C11DD00A904EC /* FMDatabaseAdditions.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FMDatabaseAdditions.h; sourceTree = "<group>"; };
+		E64A995E2D2C11DD00A904EC /* FMDatabaseAdditions.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FMDatabaseAdditions.m; sourceTree = "<group>"; };
+		E64A995F2D2C11DD00A904EC /* FMDatabasePool.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FMDatabasePool.h; sourceTree = "<group>"; };
+		E64A99602D2C11DD00A904EC /* FMDatabasePool.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FMDatabasePool.m; sourceTree = "<group>"; };
+		E64A99612D2C11DD00A904EC /* FMDatabaseQueue.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FMDatabaseQueue.h; sourceTree = "<group>"; };
+		E64A99622D2C11DD00A904EC /* FMDatabaseQueue.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FMDatabaseQueue.m; sourceTree = "<group>"; };
+		E64A99632D2C11DD00A904EC /* FMDB.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FMDB.h; sourceTree = "<group>"; };
+		E64A99642D2C11DD00A904EC /* FMResultSet.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FMResultSet.h; sourceTree = "<group>"; };
+		E64A99652D2C11DD00A904EC /* FMResultSet.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FMResultSet.m; sourceTree = "<group>"; };
+		E64A996B2D2C11DF00A904EC /* ContactsApp-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "ContactsApp-Bridging-Header.h"; sourceTree = "<group>"; };
+		E64A99722D2C1ACA00A904EC /* rehber.sqlite */ = {isa = PBXFileReference; lastKnownFileType = file; path = rehber.sqlite; sourceTree = "<group>"; };
 		E67A14DE2CF8841E00B6C4BF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E67A14FA2CF8864600B6C4BF /* Contacts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Contacts.swift; sourceTree = "<group>"; };
 		E67A14FD2CF8864600B6C4BF /* ContactRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactRow.swift; sourceTree = "<group>"; };
@@ -57,6 +77,7 @@
 			children = (
 				E67A15062CF8864600B6C4BF /* ContactsApp */,
 				E67A14F72CF8852000B6C4BF /* Preview Content */,
+				E64A99592D2C11AF00A904EC /* Frameworks */,
 				E63EF8672CDA6F050025E5D0 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -67,6 +88,14 @@
 				E63EF8662CDA6F050025E5D0 /* ContactsApp.app */,
 			);
 			name = Products;
+			sourceTree = "<group>";
+		};
+		E64A99592D2C11AF00A904EC /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				E64A995A2D2C11AF00A904EC /* libsqlite3.tbd */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 		E67A14FB2CF8864600B6C4BF /* Entity */ = {
@@ -120,6 +149,19 @@
 				E67A15032CF8864600B6C4BF /* UI */,
 				E67A14FC2CF8864600B6C4BF /* Data */,
 				E67A14DE2CF8841E00B6C4BF /* Assets.xcassets */,
+				E64A99722D2C1ACA00A904EC /* rehber.sqlite */,
+				E64A995B2D2C11DD00A904EC /* FMDatabase.h */,
+				E64A995C2D2C11DD00A904EC /* FMDatabase.m */,
+				E64A995D2D2C11DD00A904EC /* FMDatabaseAdditions.h */,
+				E64A995E2D2C11DD00A904EC /* FMDatabaseAdditions.m */,
+				E64A995F2D2C11DD00A904EC /* FMDatabasePool.h */,
+				E64A99602D2C11DD00A904EC /* FMDatabasePool.m */,
+				E64A99612D2C11DD00A904EC /* FMDatabaseQueue.h */,
+				E64A99622D2C11DD00A904EC /* FMDatabaseQueue.m */,
+				E64A99632D2C11DD00A904EC /* FMDB.h */,
+				E64A99642D2C11DD00A904EC /* FMResultSet.h */,
+				E64A99652D2C11DD00A904EC /* FMResultSet.m */,
+				E64A996B2D2C11DF00A904EC /* ContactsApp-Bridging-Header.h */,
 			);
 			path = ContactsApp;
 			sourceTree = "<group>";
@@ -171,6 +213,7 @@
 				TargetAttributes = {
 					E63EF8652CDA6F050025E5D0 = {
 						CreatedOnToolsVersion = 16.1;
+						LastSwiftMigration = 1610;
 					};
 				};
 			};
@@ -199,6 +242,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				E67A14E62CF8841E00B6C4BF /* Assets.xcassets in Resources */,
+				E64A99732D2C1ACA00A904EC /* rehber.sqlite in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -215,6 +259,11 @@
 				E67A15092CF8864600B6C4BF /* ContactAddView.swift in Sources */,
 				E67A150A2CF8864600B6C4BF /* ContactDetailView.swift in Sources */,
 				E67A150B2CF8864600B6C4BF /* Homepage.swift in Sources */,
+				E64A99662D2C11DD00A904EC /* FMDatabaseQueue.m in Sources */,
+				E64A99672D2C11DD00A904EC /* FMDatabasePool.m in Sources */,
+				E64A99682D2C11DD00A904EC /* FMDatabaseAdditions.m in Sources */,
+				E64A99692D2C11DD00A904EC /* FMResultSet.m in Sources */,
+				E64A996A2D2C11DD00A904EC /* FMDatabase.m in Sources */,
 				E67A15102CF8871D00B6C4BF /* ContactAddVM.swift in Sources */,
 				E67A150C2CF8864600B6C4BF /* ContactsAppApp.swift in Sources */,
 				E67A150D2CF8864600B6C4BF /* HomepageVM.swift in Sources */,
@@ -348,6 +397,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "";
@@ -366,6 +416,8 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.dogukanakyuz.ContactsApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "ContactsApp/ContactsApp-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -376,6 +428,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "";
@@ -394,6 +447,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.dogukanakyuz.ContactsApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "ContactsApp/ContactsApp-Bridging-Header.h";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
